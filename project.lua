@@ -22,6 +22,11 @@ table.insert(
       make.get_proj_root() .. "./",
     },
 
+    defines = {
+      "SOL_NO_EXCEPTIONS",
+      "LUA_USE_LONGJMP",
+    }
+
     lib_dirs_macosx = {
       "/usr/local/lib/",
     },
