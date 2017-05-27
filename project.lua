@@ -25,7 +25,7 @@ table.insert(
     defines = {
       "SOL_NO_EXCEPTIONS",
       "LUA_USE_LONGJMP",
-    }
+    },
 
     lib_dirs_macosx = {
       "/usr/local/lib/",
