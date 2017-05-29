@@ -1,3 +1,5 @@
+#ifndef __EMSCRIPTEN__
+
 // ImGui SDL2 binding with OpenGL3
 // In this binding, ImTextureID is used to store an OpenGL 'GLuint' texture identifier. Read the FAQ about ImTextureID in imgui.cpp.
 
@@ -17,3 +19,6 @@ IMGUI_API bool        ImGui_ImplSdlGL3_ProcessEvent(SDL_Event* event);
 // Use if you want to reset your rendering device without losing ImGui state.
 IMGUI_API void        ImGui_ImplSdlGL3_InvalidateDeviceObjects();
 IMGUI_API bool        ImGui_ImplSdlGL3_CreateDeviceObjects();
+
+
+#endif // #ifndef __EMSCRIPTEN__

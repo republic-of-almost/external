@@ -1,3 +1,4 @@
+#ifndef __EMSCRIPTEN__
 /*
 
     This file was generated with gl3w_gen.py, part of gl3w
@@ -2637,3 +2638,5 @@ static void load_procs(GL3WGetProcAddressProc proc)
 	gl3wWeightPathsNV = (PFNGLWEIGHTPATHSNVPROC)proc("glWeightPathsNV");
 	gl3wWindowRectanglesEXT = (PFNGLWINDOWRECTANGLESEXTPROC)proc("glWindowRectanglesEXT");
 }
+
+#endif

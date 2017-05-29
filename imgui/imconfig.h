@@ -1,3 +1,5 @@
+#ifndef __EMSCRIPTEN__
+
 //-----------------------------------------------------------------------------
 // USER IMPLEMENTATION
 // This file contains compile-time options for ImGui.
@@ -52,3 +54,5 @@ namespace ImGui
 }
 */
 
+
+#endif // #ifndef __EMSCRIPTEN__

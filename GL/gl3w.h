@@ -1,3 +1,5 @@
+#ifndef __EMSCRIPTEN__
+
 /*
 
     This file was generated with gl3w_gen.py, part of gl3w
@@ -2528,3 +2530,5 @@ extern PFNGLWINDOWRECTANGLESEXTPROC                         gl3wWindowRectangles
 #endif
 
 #endif
+
+#endif // #ifndef __EMSCRIPTEN__

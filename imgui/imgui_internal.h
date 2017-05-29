@@ -1,3 +1,5 @@
+#ifndef __EMSCRIPTEN__
+
 // dear imgui, v1.50 WIP
 // (internals)
 
@@ -89,7 +91,7 @@ IMGUI_API int           ImTextCountUtf8BytesFromStr(const ImWchar* in_text, cons
 // Helpers: Misc
 IMGUI_API ImU32         ImHash(const void* data, int data_size, ImU32 seed = 0);    // Pass data_size==0 for zero-terminated strings
 IMGUI_API void*         ImFileLoadToMemory(const char* filename, const char* file_open_mode, int* out_file_size = NULL, int padding_bytes = 0);
-IMGUI_API FILE*         ImFileOpen(const char* filename, const char* file_open_mode);         
+IMGUI_API FILE*         ImFileOpen(const char* filename, const char* file_open_mode);
 IMGUI_API bool          ImIsPointInTriangle(const ImVec2& p, const ImVec2& a, const ImVec2& b, const ImVec2& c);
 static inline bool      ImCharIsSpace(int c)            { return c == ' ' || c == '\t' || c == 0x3000; }
 static inline int       ImUpperPowerOfTwo(int v)        { v--; v |= v >> 1; v |= v >> 2; v |= v >> 4; v |= v >> 8; v |= v >> 16; v++; return v; }
@@ -774,3 +776,6 @@ namespace ImGui
 #ifdef _MSC_VER
 #pragma warning (pop)
 #endif
+
+
+#endif // #ifndef __EMSCRIPTEN__

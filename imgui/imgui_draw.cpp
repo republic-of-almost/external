@@ -1,3 +1,5 @@
+#ifndef __EMSCRIPTEN__
+
 // dear imgui, v1.50 WIP
 // (drawing and font code)
 
@@ -2399,3 +2401,6 @@ static const char* GetDefaultCompressedFontDataTTFBase85()
 {
     return proggy_clean_ttf_compressed_data_base85;
 }
+
+
+#endif // #ifndef __EMSCRIPTEN__
